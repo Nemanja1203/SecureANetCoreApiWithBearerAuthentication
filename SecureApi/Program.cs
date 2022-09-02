@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
-namespace SecureApi; 
+namespace SecureApi;
 
 public class Program {
 	public static void Main(string[] args) {
@@ -27,6 +27,7 @@ public class Program {
 
 		app.UseHttpsRedirection();
 
+		app.UseAuthentication();
 		app.UseAuthorization();
 
 
